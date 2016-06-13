@@ -1,0 +1,39 @@
+<!doctype html>
+<html ng-app="Myapp">
+ <script src="angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+ <script src="script/myscripts.js"></script>
+ <link rel="stylesheet" type="text/css" href="style/mystyle.css">
+ <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+
+<body>
+
+<div id="header">
+<h1>GitHub Status </h1>
+</div>
+
+<div id="nav">
+Future Links<br>
+other<br>
+</div>
+
+<div id="section" ng-controller="MyCon">
+<h2 id="head2"> GitHub Latest Status</h2>
+<p id="par2">
+Press the buttom to check the current status.</p>
+	<form id="form-container" class="form-container">
+        <button id="submit-btn" ng-click="notify('Clicked')">press me!</button>
+
+    </form>
+	
+</div>
+
+
+<div id="footer">
+Copyright © Shay Barel Ozana
+</div>
+
+</body>
+</html>
+
